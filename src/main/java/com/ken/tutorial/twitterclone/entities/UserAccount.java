@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.utility;
+package com.ken.tutorial.twitterclone.entities;
 
 public class UserAccount {
     private Integer userId;

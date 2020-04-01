@@ -1,6 +1,6 @@
 package com.ken.tutorial.twitterclone.DAO;
 
-import com.ken.tutorial.twitterclone.utility.UserAccount;
+import com.ken.tutorial.twitterclone.entities.UserAccount;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
