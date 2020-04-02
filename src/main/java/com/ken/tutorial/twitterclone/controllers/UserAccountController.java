@@ -41,13 +41,13 @@ public class UserAccountController {
     }
 
     // @RequestMapping(value = "/view-user-account", method = RequestMethod.GET)
-    public String viewUserAccount(/*@RequestParam("user_id")*/Integer userId, Model model) {
+    public String viewUserAccount(/*@RequestParam("user_id")*/ Integer userId, Model model) {
         UserAccount userAccount = userAccountJDBC.getUserAccount(userId);
         model.addAttribute("userAccount", userAccount);
         return "user-account-form";
     }
     // @RequestMapping(value = "/delete-user-account", method = RequestMethod.GET)
-    public String deleteUserAccount(/*@RequestParam("user_id")*/Integer userId, Model model) {
+    public String deleteUserAccount(/*@RequestParam("user_id")*/ Integer userId, Model model) {
         userAccountJDBC.deleteUser(userId);
         return "redirect:/user-account/user-list";
     }
