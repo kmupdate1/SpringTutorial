@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configration-3.0.dtd">
+
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <session-factory>
+            <!-- JDBC Database connection setting -->
+            <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+            <property name="connection.url">jdbc:mysql://localhost:3306</property>
+        </session-factory>
+    </session-factory>
+</hibernate-configuration>
