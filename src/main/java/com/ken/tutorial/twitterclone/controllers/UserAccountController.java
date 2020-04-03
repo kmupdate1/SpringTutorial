@@ -46,6 +46,7 @@ public class UserAccountController {
         model.addAttribute("userAccount", userAccount);
         return "user-account-form";
     }
+
     // @RequestMapping(value = "/delete-user-account", method = RequestMethod.GET)
     public String deleteUserAccount(/*@RequestParam("user_id")*/ Integer userId, Model model) {
         userAccountJDBC.deleteUser(userId);
