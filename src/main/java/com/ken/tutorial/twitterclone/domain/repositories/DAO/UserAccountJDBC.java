@@ -1,7 +1,7 @@
-package com.ken.tutorial.twitterclone.DAO;
+package com.ken.tutorial.twitterclone.domain.repositories.DAO;
 
 import com.ken.tutorial.twitterclone.entities.UserAccount;
-import com.ken.tutorial.twitterclone.mappers.UserAccountMapper;
+import com.ken.tutorial.twitterclone.domain.repositories.mappers.UserAccountMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;

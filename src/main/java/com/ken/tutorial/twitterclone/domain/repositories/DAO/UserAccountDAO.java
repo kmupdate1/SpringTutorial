@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.DAO;
+package com.ken.tutorial.twitterclone.domain.repositories.DAO;
 
 import com.ken.tutorial.twitterclone.entities.UserAccount;
 

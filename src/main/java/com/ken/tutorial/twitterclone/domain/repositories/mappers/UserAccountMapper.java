@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.mappers;
+package com.ken.tutorial.twitterclone.domain.repositories.mappers;
 
 import com.ken.tutorial.twitterclone.entities.UserAccount;
 
