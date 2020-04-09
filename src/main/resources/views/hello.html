@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
+	<meta charset="utf-8" />
 	<title>Hello</title>
 </head>
 <body>
-	<h1>Hello ここに→{userid}.</h1>
+	<h1>Hello World!</h1>
+	<form method="post" action="/hell">
+		<u>
+			好きな文字を入力してください：<br>
+			<input type="text" name="text1s" th:value="${text1s}" />
+			<input type="submit" name="CLICK" />
+		</u>
+	</form>
 </body>
 </html>
