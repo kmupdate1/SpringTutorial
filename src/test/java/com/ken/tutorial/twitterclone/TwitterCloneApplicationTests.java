@@ -9,5 +9,4 @@ class TwitterCloneApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
