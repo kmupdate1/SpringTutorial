@@ -3,10 +3,12 @@ package com.ken.tutorial.twitterclone.domain.repositories.DAO;
 import com.ken.tutorial.twitterclone.entities.UserAccount;
 import com.ken.tutorial.twitterclone.domain.repositories.mappers.UserAccountMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.util.List;
 
+@Component
 public class UserAccountJDBC implements IUserAccountDAO {
     private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
