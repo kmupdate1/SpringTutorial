@@ -13,8 +13,18 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HelloController {
     @Autowired
     private HelloService helloService;
-    // = new HelloService(); の代わりにアノテーション'@Autowired'でワイヤリングして
-    //　インスタンスをDIコンテナからインジェクトしてくれる．
+    /*
+    = new HelloService(); の代わりにアノテーション'@Autowired'でワイヤリングして
+    インスタンスをDIコンテナからインジェクトしてくれる．
+    元々，DIコンテナが，各モジュールでアノテーションを利用して宣言したことで，
+    内部的にモジュールクラスのインスタンスを生成．インジェクト可能な機構を提供する．
+    ↓ここからは予想だけど．．．↓
+    既に，Spring Frameworkとして提供されているモジュール群については
+    pom.xml(Maven)に定義することで，それらモジュールクラスのインスタンスを生成してくれている？
+    だから，@Autowiredでインジェクトして使うことができるのでは？
+    DIコンテナ内でインスタンスの管理機構も持ち合わせている．
+    インスタンスのライフサイクルの管理を提供．
+     */
 
     @GetMapping("/hello")
     public String getHello() {
