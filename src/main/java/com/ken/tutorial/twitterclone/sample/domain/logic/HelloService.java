@@ -1,7 +1,7 @@
-package com.ken.tutorial.twitterclone.domain.logic;
+package com.ken.tutorial.twitterclone.sample.domain.logic;
 
-import com.ken.tutorial.twitterclone.domain.repositories.HelloRepository;
-import com.ken.tutorial.twitterclone.entities.Employee;
+import com.ken.tutorial.twitterclone.sample.domain.repositories.HelloRepository;
+import com.ken.tutorial.twitterclone.sample.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

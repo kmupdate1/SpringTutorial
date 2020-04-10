@@ -1,6 +1,6 @@
-package com.ken.tutorial.twitterclone.domain.repositories.DAO;
+package com.ken.tutorial.twitterclone.sample.domain.repositories.DAO;
 
-import com.ken.tutorial.twitterclone.entities.UserAccount;
+import com.ken.tutorial.twitterclone.sample.entities.UserAccount;
 
 import javax.sql.DataSource;
 import java.util.List;

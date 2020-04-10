@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.application;
+package com.ken.tutorial.twitterclone.sample.application;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;

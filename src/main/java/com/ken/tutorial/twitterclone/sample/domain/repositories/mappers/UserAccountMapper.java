@@ -1,6 +1,6 @@
-package com.ken.tutorial.twitterclone.domain.repositories.mappers;
+package com.ken.tutorial.twitterclone.sample.domain.repositories.mappers;
 
-import com.ken.tutorial.twitterclone.entities.UserAccount;
+import com.ken.tutorial.twitterclone.sample.entities.UserAccount;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

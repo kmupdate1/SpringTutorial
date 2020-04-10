@@ -1,7 +1,7 @@
-package com.ken.tutorial.twitterclone.application.controllers;
+package com.ken.tutorial.twitterclone.sample.application.controllers;
 
-import com.ken.tutorial.twitterclone.domain.logic.HelloService;
-import com.ken.tutorial.twitterclone.entities.Employee;
+import com.ken.tutorial.twitterclone.sample.domain.logic.HelloService;
+import com.ken.tutorial.twitterclone.sample.entities.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

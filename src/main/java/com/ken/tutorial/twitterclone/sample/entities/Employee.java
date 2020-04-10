@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.entities;
+package com.ken.tutorial.twitterclone.sample.entities;
 
 import javax.persistence.Entity;
 

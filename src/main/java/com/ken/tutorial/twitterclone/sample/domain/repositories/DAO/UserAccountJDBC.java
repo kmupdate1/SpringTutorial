@@ -1,7 +1,7 @@
-package com.ken.tutorial.twitterclone.domain.repositories.DAO;
+package com.ken.tutorial.twitterclone.sample.domain.repositories.DAO;
 
-import com.ken.tutorial.twitterclone.entities.UserAccount;
-import com.ken.tutorial.twitterclone.domain.repositories.mappers.UserAccountMapper;
+import com.ken.tutorial.twitterclone.sample.entities.UserAccount;
+import com.ken.tutorial.twitterclone.sample.domain.repositories.mappers.UserAccountMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 

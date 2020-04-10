@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.domain.repositories;
+package com.ken.tutorial.twitterclone.sample.domain.repositories;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

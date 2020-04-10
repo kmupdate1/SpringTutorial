@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.application.controllers;
+package com.ken.tutorial.twitterclone.sample.application.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;

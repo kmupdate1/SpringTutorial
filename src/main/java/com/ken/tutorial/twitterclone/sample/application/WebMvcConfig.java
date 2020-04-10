@@ -1,4 +1,4 @@
-package com.ken.tutorial.twitterclone.application;
+package com.ken.tutorial.twitterclone.sample.application;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
