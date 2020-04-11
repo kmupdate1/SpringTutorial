@@ -14,14 +14,14 @@
         <div class="page-header">
             <h1>User Registration page</h1>
         </div>
-        <form method="post" th:action="@{singup}">
+        <form method="post" th:action="@{singup}" th:object="${signupForm}">
             <table class="table table-bordered table-hover">
                 <!-- ユーザ入力エリア -->
                 <tr>
                     <th class="active col-sm-3">User ID</th>
                     <td>
                         <div class="form-group">
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control" th:field=" * {userId}" />
                         </div>
                     </td>
                 </tr>
@@ -31,7 +31,7 @@
                     <th class="active">User Password</th>
                     <td>
                         <div class="form-group">
-                            <input type="password" class="form-control" />
+                            <input type="password" class="form-control" th:field=" * {password}" />
                         </div>
                     </td>
                 </tr>
@@ -41,7 +41,7 @@
                     <th class="active">User Name</th>
                     <td>
                         <div class="form-group">
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control" th:field=" * {name}" />
                         </div>
                     </td>
                 </tr>
@@ -51,7 +51,7 @@
                     <th class="active">Birthday</th>
                     <td>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="yyyy/mm/dd" />
+                            <input type="text" class="form-control" placeholder="yyyy/mm/dd" th:field=" * {birthday}" />
                         </div>
                     </td>
                 </tr>
@@ -61,7 +61,7 @@
                     <th class="active">Years</th>
                     <td>
                         <div class="form-group">
-                            <input type="text" class="form-control" />
+                            <input type="text" class="form-control" th:field=" * {age}" />
                         </div>
                     </td>
                 </tr>
@@ -73,12 +73,18 @@
                         <div class="form-group">
                             <!-- Radio button -->
                             <div th:each="item : ${radioMarriage}">
-                                <input type="radio" name="radioMarriage" th:text="${item.key}" th:value="${item.value}"/>
+                                <input type="radio" name="radioMarriage" th:text="${item.key}" th:value="${item.value}" th:field=" * {marriage}" />
                             </div>
                         </div>
                     </td>
                 </tr>
             </table>
+
+            <ul>
+                <li th:each="error : &{#fields.detailedErrors()}">
+                    <span th:text="${error.message}">Error message</span>
+                </li>
+            </ul>
 
             <button class="btn btn-primary" type="submit">
                 Register
