@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+
+    <!-- Setting of Bootstrap -->
+    <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet" />
+    <script th:src="@{/webjars/jquery/1.11.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<title>Sign Up</title>
+</head>
+<body>
+    <div class="col-sm-5">
+        <div class="page-header">
+            <h1>User Registration page</h1>
+        </div>
+        <form method="post" th:action="@{singup}">
+            <table class="table table-bordered table-hover">
+                <!-- ユーザ入力エリア -->
+                <tr>
+                    <th class="active col-sm-3">User ID</th>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- パスワード入力エリア -->
+                <tr>
+                    <th class="active">User Password</th>
+                    <td>
+                        <div class="form-group">
+                            <input type="password" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- ユーザ名の入力エリア -->
+                <tr>
+                    <th class="active">User Name</th>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- 誕生日入力エリア -->
+                <tr>
+                    <th class="active">Birthday</th>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="yyyy/mm/dd" />
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- 年齢入力エリア -->
+                <tr>
+                    <th class="active">Years</th>
+                    <td>
+                        <div class="form-group">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- 結婚ステータス入力エリア -->
+                <tr>
+                    <th class="active">Marriage</th>
+                    <td>
+                        <div class="form-group">
+                            <!-- Radio button -->
+                            <div th:each="item : ${radioMarriage}">
+                                <input type="radio" name="radioMarriage" th:text="${item.key}" th:value="${item.value}"/>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <button class="btn btn-primary" type="submit">
+                Register
+            </button>
+
+        </form>
+    </div>
+</body>
+</html>
