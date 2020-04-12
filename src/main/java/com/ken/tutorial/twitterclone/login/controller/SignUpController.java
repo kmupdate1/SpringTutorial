@@ -4,6 +4,7 @@ import com.ken.tutorial.twitterclone.login.domain.model.SignUpForm;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -44,7 +45,7 @@ public class SignUpController {
     */
 
     @PostMapping("/signup")
-    public String postSignUp(@ModelAttribute SignUpForm form, BindingResult bindingResult, Model model) {
+    public String postSignUp(@ModelAttribute @Validated SignUpForm form, BindingResult bindingResult, Model model) {
         if ( bindingResult.hasErrors() ) {
             return getSignUp(form, model);
         }

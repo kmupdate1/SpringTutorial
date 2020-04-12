@@ -1,19 +1,33 @@
 package com.ken.tutorial.twitterclone.login.domain.model;
 
+import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.*;
 import java.util.Date;
 
 public class SignUpForm {
 
+    @NotBlank
     private Integer userId;
+
+    @NotBlank
+    @Length(min = 6, max = 100)
+    @Pattern(regexp = "^[a-zA-Z0-9]+$")
     private String password;
+
+    @NotBlank
     private String name;
 
+    @NotNull
     @DateTimeFormat(pattern = "yyyy/mm/dd")
     private Date birthday;
 
+    @Min(20)
+    @Max(100)
     private Integer age;
+
+    @AssertFalse
     private Boolean marriage;
 
     public Integer getUserId() {
